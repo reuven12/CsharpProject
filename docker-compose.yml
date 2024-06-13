@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  apigateway:
+    image: apigateway
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+    ports:
+      - "5085:80"
+    depends_on:
+      - authenticationservice
+      - mymicroservice1
+      - mymicroservice2
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    networks:
+      - mynetwork
+
+  authenticationservice:
+    image: authenticationservice
+    build:
+      context: .
+      dockerfile: AuthenticationService/Dockerfile
+    ports:
+      - "5003:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    networks:
+      - mynetwork
+
+  mymicroservice1:
+    image: mymicroservice1
+    build:
+      context: .
+      dockerfile: MyMicroservice1/Dockerfile
+    ports:
+      - "5001:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    networks:
+      - mynetwork
+
+  mymicroservice2:
+    image: mymicroservice2
+    build:
+      context: .
+      dockerfile: MyMicroservice2/Dockerfile
+    ports:
+      - "5002:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:

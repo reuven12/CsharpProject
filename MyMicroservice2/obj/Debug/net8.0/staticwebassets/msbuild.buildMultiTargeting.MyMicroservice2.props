@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../build/MyMicroservice2.props" />
-</Project>

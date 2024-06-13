@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/reuven/MyMicroservicesProject/MyMicroservice1/MyMicroservice1.csproj",
+      "projectUniqueName": "/home/reuven/CsharpProject/MyMicroservice1/MyMicroservice1.csproj",
       "projectName": "MyMicroservice1",
-      "projectPath": "/home/reuven/MyMicroservicesProject/MyMicroservice1/MyMicroservice1.csproj",
+      "projectPath": "/home/reuven/CsharpProject/MyMicroservice1/MyMicroservice1.csproj",
       "packagesPath": "/home/reuven/.nuget/packages/",
-      "outputPath": "/home/reuven/MyMicroservicesProject/MyMicroservice1/obj/",
+      "outputPath": "/home/reuven/CsharpProject/MyMicroservice1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/reuven/.nuget/NuGet/NuGet.Config"

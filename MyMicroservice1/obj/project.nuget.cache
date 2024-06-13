@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ROuhDTrpzhE=",
+  "dgSpecHash": "YYs4Kd6rDkY=",
   "success": true,
-  "projectFilePath": "/home/reuven/MyMicroservicesProject/MyMicroservice1/MyMicroservice1.csproj",
+  "projectFilePath": "/home/reuven/CsharpProject/MyMicroservice1/MyMicroservice1.csproj",
   "expectedPackageFiles": [
     "/home/reuven/.nuget/packages/microsoft.aspnetcore.openapi/8.0.6/microsoft.aspnetcore.openapi.8.0.6.nupkg.sha512",
     "/home/reuven/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

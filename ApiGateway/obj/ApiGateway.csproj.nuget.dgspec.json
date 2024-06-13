@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/reuven/MyMicroservicesProject/ApiGateway/ApiGateway.csproj": {}
+    "/home/reuven/CsharpProject/ApiGateway/ApiGateway.csproj": {}
   },
   "projects": {
-    "/home/reuven/MyMicroservicesProject/ApiGateway/ApiGateway.csproj": {
+    "/home/reuven/CsharpProject/ApiGateway/ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/reuven/MyMicroservicesProject/ApiGateway/ApiGateway.csproj",
+        "projectUniqueName": "/home/reuven/CsharpProject/ApiGateway/ApiGateway.csproj",
         "projectName": "ApiGateway",
-        "projectPath": "/home/reuven/MyMicroservicesProject/ApiGateway/ApiGateway.csproj",
+        "projectPath": "/home/reuven/CsharpProject/ApiGateway/ApiGateway.csproj",
         "packagesPath": "/home/reuven/.nuget/packages/",
-        "outputPath": "/home/reuven/MyMicroservicesProject/ApiGateway/obj/",
+        "outputPath": "/home/reuven/CsharpProject/ApiGateway/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/reuven/.nuget/NuGet/NuGet.Config"

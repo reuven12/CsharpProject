@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gjgw5wS9Lr0=",
+  "dgSpecHash": "uwZ34UTmIpU=",
   "success": true,
-  "projectFilePath": "/home/reuven/MyMicroservicesProject/ApiGateway/ApiGateway.csproj",
+  "projectFilePath": "/home/reuven/CsharpProject/ApiGateway/ApiGateway.csproj",
   "expectedPackageFiles": [
     "/home/reuven/.nuget/packages/microsoft.aspnetcore.openapi/8.0.6/microsoft.aspnetcore.openapi.8.0.6.nupkg.sha512",
     "/home/reuven/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

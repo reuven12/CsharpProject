@@ -17,7 +17,7 @@ public class HomeController : ControllerBase
     public async Task<IActionResult> GetFromMicroservice1()
     {
         var client = _httpClientFactory.CreateClient();
-        var response = await client.GetStringAsync("http://localhost:5001/api/My");
+        var response = await client.GetStringAsync("http://mymicroservice1:80/api/My");
         return Ok(response);
     }
 
@@ -25,7 +25,8 @@ public class HomeController : ControllerBase
     public async Task<IActionResult> GetFromMicroservice2()
     {
         var client = _httpClientFactory.CreateClient();
-        var response = await client.GetStringAsync("http://localhost:5002/api/My");
+        var response = await client.GetStringAsync("http://mymicroservice2:80/api/My");
         return Ok(response);
     }
+
 }
