@@ -1,57 +1,56 @@
 version: '3.8'
 
 services:
-  apigateway:
-    image: apigateway
+  usersservice:
+    image: usersservice
     build:
       context: .
-      dockerfile: ApiGateway/Dockerfile
-    ports:
-      - "5085:80"
-    depends_on:
-      - authenticationservice
-      - mymicroservice1
-      - mymicroservice2
-    environment:
-      ASPNETCORE_ENVIRONMENT: Development
-    networks:
-      - mynetwork
-
-  authenticationservice:
-    image: authenticationservice
-    build:
-      context: .
-      dockerfile: AuthenticationService/Dockerfile
-    ports:
-      - "5003:80"
-    environment:
-      ASPNETCORE_ENVIRONMENT: Development
-    networks:
-      - mynetwork
-
-  mymicroservice1:
-    image: mymicroservice1
-    build:
-      context: .
-      dockerfile: MyMicroservice1/Dockerfile
+      dockerfile: UsersService/Dockerfile
     ports:
       - "5001:80"
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=users-mysql;Database=UsersDb;User=root;Password=yourpassword;"
+    depends_on:
+      - users-mysql
     networks:
       - mynetwork
 
-  mymicroservice2:
-    image: mymicroservice2
+  ordersservice:
+    image: ordersservice
     build:
       context: .
-      dockerfile: MyMicroservice2/Dockerfile
+      dockerfile: OrdersService/Dockerfile
     ports:
       - "5002:80"
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__DefaultConnection: "Server=orders-mysql;Database=OrdersDb;User=root;Password=yourpassword;"
+    depends_on:
+      - orders-mysql
+    networks:
+      - mynetwork
+
+  users-mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: yourpassword
+      MYSQL_DATABASE: UsersDb
+    ports:
+      - "3306:3306"
+    networks:
+      - mynetwork
+
+  orders-mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: yourpassword
+      MYSQL_DATABASE: OrdersDb
+    ports:
+      - "3307:3306"
     networks:
       - mynetwork
 
 networks:
   mynetwork:
+    driver: bridge

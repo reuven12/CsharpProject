@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Public\\CsharpProject\\ApiGateway\\ApiGateway.csproj": {}
+    "C:\\Users\\Public\\CsharpProject\\AuthenticationService\\AuthenticationService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Public\\CsharpProject\\ApiGateway\\ApiGateway.csproj": {
+    "C:\\Users\\Public\\CsharpProject\\AuthenticationService\\AuthenticationService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Public\\CsharpProject\\ApiGateway\\ApiGateway.csproj",
-        "projectName": "ApiGateway",
-        "projectPath": "C:\\Users\\Public\\CsharpProject\\ApiGateway\\ApiGateway.csproj",
+        "projectUniqueName": "C:\\Users\\Public\\CsharpProject\\AuthenticationService\\AuthenticationService.csproj",
+        "projectName": "AuthenticationService",
+        "projectPath": "C:\\Users\\Public\\CsharpProject\\AuthenticationService\\AuthenticationService.csproj",
         "packagesPath": "C:\\Users\\שרה וראובן\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Public\\CsharpProject\\ApiGateway\\obj\\",
+        "outputPath": "C:\\Users\\Public\\CsharpProject\\AuthenticationService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\שרה וראובן\\AppData\\Roaming\\NuGet\\NuGet.Config"

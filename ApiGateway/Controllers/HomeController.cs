@@ -1,32 +1,36 @@
+using Microsoft.AspNetCore.Mvc;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
-[ApiController]
-[Route("[controller]")]
-public class HomeController : ControllerBase
+namespace ApiGateway.Controllers
 {
-    private readonly IHttpClientFactory _httpClientFactory;
-
-    public HomeController(IHttpClientFactory httpClientFactory)
+    [ApiController]
+    [Route("api/[controller]")]
+    public class HomeController : ControllerBase
     {
-        _httpClientFactory = httpClientFactory;
-    }
+        private readonly IHttpClientFactory _httpClientFactory;
 
-    [HttpGet("microservice1")]
-    public async Task<IActionResult> GetFromMicroservice1()
-    {
-        var client = _httpClientFactory.CreateClient();
-        var response = await client.GetStringAsync("http://mymicroservice1:80/api/My");
-        return Ok(response);
-    }
+        public HomeController(IHttpClientFactory httpClientFactory)
+        {
+            _httpClientFactory = httpClientFactory;
+        }
 
-    [HttpGet("microservice2")]
-    public async Task<IActionResult> GetFromMicroservice2()
-    {
-        var client = _httpClientFactory.CreateClient();
-        var response = await client.GetStringAsync("http://mymicroservice2:80/api/My");
-        return Ok(response);
-    }
+        [HttpGet("users")]
+        public async Task<IActionResult> GetUsers()
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.GetStringAsync("http://usersservice/api/users");
+            return Ok(response);
+        }
 
+        [HttpGet("orders")]
+        public async Task<IActionResult> GetOrders()
+        {
+            var client = _httpClientFactory.CreateClient();
+            var response = await client.GetStringAsync("http://ordersservice/api/orders");
+            return Ok(response);
+        }
+
+        // Add more methods as needed for other CRUD operations
+    }
 }

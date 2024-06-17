@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Public\\CsharpProject\\ApiGateway\\ApiGateway.csproj": {}
+    "C:\\Users\\Public\\CsharpProject\\UsersService\\UsersService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Public\\CsharpProject\\ApiGateway\\ApiGateway.csproj": {
+    "C:\\Users\\Public\\CsharpProject\\UsersService\\UsersService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Public\\CsharpProject\\ApiGateway\\ApiGateway.csproj",
-        "projectName": "ApiGateway",
-        "projectPath": "C:\\Users\\Public\\CsharpProject\\ApiGateway\\ApiGateway.csproj",
+        "projectUniqueName": "C:\\Users\\Public\\CsharpProject\\UsersService\\UsersService.csproj",
+        "projectName": "UsersService",
+        "projectPath": "C:\\Users\\Public\\CsharpProject\\UsersService\\UsersService.csproj",
         "packagesPath": "C:\\Users\\שרה וראובן\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Public\\CsharpProject\\ApiGateway\\obj\\",
+        "outputPath": "C:\\Users\\Public\\CsharpProject\\UsersService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\שרה וראובן\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -46,6 +46,14 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

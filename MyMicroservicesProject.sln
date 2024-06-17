@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMicroservice1", "MyMicroservice1\MyMicroservice1.csproj", "{859553A5-0BF6-4798-A5B7-7E7FEA1EFDC8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyMicroservice2", "MyMicroservice2\MyMicroservice2.csproj", "{4F369D08-CF2A-422B-8488-9447CF9B040A}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationService", "AuthenticationService\AuthenticationService.csproj", "{05512DCE-B399-42D1-BD1F-E849C4BF7247}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{7DD7249A-BDB9-4E6F-8473-DE7A71458B61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersService", "UsersService\UsersService.csproj", "{45C4913E-3F78-4273-B188-C08724865FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrdersService", "OrdersService\OrdersService.csproj", "{19368472-F37B-4046-949E-E8B7C741A818}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +36,13 @@ Global
 		{7DD7249A-BDB9-4E6F-8473-DE7A71458B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DD7249A-BDB9-4E6F-8473-DE7A71458B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DD7249A-BDB9-4E6F-8473-DE7A71458B61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45C4913E-3F78-4273-B188-C08724865FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45C4913E-3F78-4273-B188-C08724865FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45C4913E-3F78-4273-B188-C08724865FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45C4913E-3F78-4273-B188-C08724865FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19368472-F37B-4046-949E-E8B7C741A818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19368472-F37B-4046-949E-E8B7C741A818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19368472-F37B-4046-949E-E8B7C741A818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19368472-F37B-4046-949E-E8B7C741A818}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
