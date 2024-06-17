@@ -460,19 +460,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\שרה וראובן\\.nuget\\packages\\": {}
+    "/home/reuven/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Public\\CsharpProject\\ApiGateway\\ApiGateway.csproj",
+      "projectUniqueName": "/home/reuven/CsharpProject/ApiGateway/ApiGateway.csproj",
       "projectName": "ApiGateway",
-      "projectPath": "C:\\Users\\Public\\CsharpProject\\ApiGateway\\ApiGateway.csproj",
-      "packagesPath": "C:\\Users\\שרה וראובן\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Public\\CsharpProject\\ApiGateway\\obj\\",
+      "projectPath": "/home/reuven/CsharpProject/ApiGateway/ApiGateway.csproj",
+      "packagesPath": "/home/reuven/.nuget/packages/",
+      "outputPath": "/home/reuven/CsharpProject/ApiGateway/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\שרה וראובן\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/reuven/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -529,7 +529,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

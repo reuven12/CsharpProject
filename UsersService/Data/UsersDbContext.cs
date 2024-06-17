@@ -1,4 +1,3 @@
-// UsersService/Data/UsersDbContext.cs
 using Microsoft.EntityFrameworkCore;
 using UsersService.Models;
 

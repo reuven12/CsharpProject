@@ -1168,19 +1168,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\שרה וראובן\\.nuget\\packages\\": {}
+    "/home/reuven/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Public\\CsharpProject\\UsersService\\UsersService.csproj",
+      "projectUniqueName": "/home/reuven/CsharpProject/UsersService/UsersService.csproj",
       "projectName": "UsersService",
-      "projectPath": "C:\\Users\\Public\\CsharpProject\\UsersService\\UsersService.csproj",
-      "packagesPath": "C:\\Users\\שרה וראובן\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Public\\CsharpProject\\UsersService\\obj\\",
+      "projectPath": "/home/reuven/CsharpProject/UsersService/UsersService.csproj",
+      "packagesPath": "/home/reuven/.nuget/packages/",
+      "outputPath": "/home/reuven/CsharpProject/UsersService/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\שרה וראובן\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/reuven/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1245,7 +1245,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

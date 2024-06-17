@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Public\\CsharpProject\\OrdersService\\OrdersService.csproj": {}
+    "/home/reuven/CsharpProject/OrdersService/OrdersService.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Public\\CsharpProject\\OrdersService\\OrdersService.csproj": {
+    "/home/reuven/CsharpProject/OrdersService/OrdersService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Public\\CsharpProject\\OrdersService\\OrdersService.csproj",
+        "projectUniqueName": "/home/reuven/CsharpProject/OrdersService/OrdersService.csproj",
         "projectName": "OrdersService",
-        "projectPath": "C:\\Users\\Public\\CsharpProject\\OrdersService\\OrdersService.csproj",
-        "packagesPath": "C:\\Users\\שרה וראובן\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Public\\CsharpProject\\OrdersService\\obj\\",
+        "projectPath": "/home/reuven/CsharpProject/OrdersService/OrdersService.csproj",
+        "packagesPath": "/home/reuven/.nuget/packages/",
+        "outputPath": "/home/reuven/CsharpProject/OrdersService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\שרה וראובן\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/reuven/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

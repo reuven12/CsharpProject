@@ -1,53 +1,74 @@
 version: '3.8'
 
 services:
+  apigateway:
+    image: apigateway
+    build:
+      context: ./ApiGateway
+      dockerfile: Dockerfile
+    ports:
+      - "5085:80"
+    depends_on:
+      - authenticationservice
+      - usersservice
+      - ordersservice
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    networks:
+      - mynetwork
+
+  authenticationservice:
+    image: authenticationservice
+    build:
+      context: ./AuthenticationService
+      dockerfile: Dockerfile
+    ports:
+      - "5003:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    networks:
+      - mynetwork
+
   usersservice:
     image: usersservice
     build:
-      context: .
-      dockerfile: UsersService/Dockerfile
+      context: ./UsersService
+      dockerfile: Dockerfile
     ports:
       - "5001:80"
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ConnectionStrings__DefaultConnection: "Server=users-mysql;Database=UsersDb;User=root;Password=yourpassword;"
+      ConnectionStrings__DefaultConnection: "Server=mysql;Database=UsersDb;User=root;Password=yourpassword;"
     depends_on:
-      - users-mysql
+      - mysql
     networks:
       - mynetwork
 
   ordersservice:
     image: ordersservice
     build:
-      context: .
-      dockerfile: OrdersService/Dockerfile
+      context: ./OrdersService
+      dockerfile: Dockerfile
     ports:
       - "5002:80"
     environment:
       ASPNETCORE_ENVIRONMENT: Development
-      ConnectionStrings__DefaultConnection: "Server=orders-mysql;Database=OrdersDb;User=root;Password=yourpassword;"
+      ConnectionStrings__DefaultConnection: "Server=mysql;Database=OrdersDb;User=root;Password=yourpassword;"
     depends_on:
-      - orders-mysql
+      - mysql
     networks:
       - mynetwork
 
-  users-mysql:
+  mysql:
     image: mysql:8.0
+    container_name: mysql
     environment:
       MYSQL_ROOT_PASSWORD: yourpassword
-      MYSQL_DATABASE: UsersDb
+    volumes:
+      - ./data/db:/var/lib/mysql
     ports:
       - "3306:3306"
-    networks:
-      - mynetwork
-
-  orders-mysql:
-    image: mysql:8.0
-    environment:
-      MYSQL_ROOT_PASSWORD: yourpassword
-      MYSQL_DATABASE: OrdersDb
-    ports:
-      - "3307:3306"
+    restart: unless-stopped
     networks:
       - mynetwork
 
